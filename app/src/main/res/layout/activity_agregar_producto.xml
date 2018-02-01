@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.david.quicktrade.Agregar_producto">
+
+    <EditText
+        android:id="@+id/editNomPro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/radioGroup3"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/botonAnadirPro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AÑADIR"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/spinner"
+        android:layout_alignStart="@+id/radioGroup3" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/radioGroup3"
+        android:layout_below="@+id/editNomPro"
+        android:layout_alignStart="@+id/editNomPro">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editNomPro"
+            android:layout_below="@+id/editNomPro"
+            android:layout_marginTop="23dp"
+            android:layout_weight="1"
+            android:text="Tecnología" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/radioButton"
+            android:layout_alignBottom="@+id/radioButton"
+            android:layout_toEndOf="@+id/radioButton"
+            android:layout_weight="1"
+            android:text="Coches" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/radioButton2"
+            android:layout_alignBottom="@+id/radioButton2"
+            android:layout_toEndOf="@+id/radioButton2"
+            android:layout_weight="1"
+            android:text="Hogar" />
+    </RadioGroup>
+
+</RelativeLayout>

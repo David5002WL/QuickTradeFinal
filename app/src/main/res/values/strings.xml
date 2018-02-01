@@ -2,6 +2,7 @@
     <string name="app_name">QuickTrade</string>
 
     <string name="nodo_usuario">usuario</string>
+    <string name="nodo_producto">producto</string>
 
     <string name="campo_nombreUsuario">nombreusuario</string>
     <string name="campo_correo">correo</string>

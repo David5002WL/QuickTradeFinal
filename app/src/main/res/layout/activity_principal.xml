@@ -7,21 +7,51 @@
     tools:context="com.example.david.quicktrade.Principal">
 
 
-    <Button
-        android:id="@+id/boton_agrUsu"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        app:srcCompat="@mipmap/phoenix" />
+
+    <EditText
+        android:id="@+id/editCorreo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="205dp"
-        android:text="AGREGAR USUARIO"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editContra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editCorreo"
+        android:layout_below="@+id/editCorreo"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:password="true" />
 
     <Button
-        android:id="@+id/boton_agrPro"
+        android:id="@+id/botonRegistrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/boton_agrUsu"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="34dp"
-        android:text="AGREGAR PRODUCTO" />
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/editContra"
+        android:layout_marginTop="31dp"
+        android:text="REGISTRAR" />
+
+    <Button
+        android:id="@+id/botonIniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/botonRegistrar"
+        android:layout_alignBottom="@+id/botonRegistrar"
+        android:layout_alignEnd="@+id/editContra"
+        android:text="INICIAR" />
+
 </RelativeLayout>

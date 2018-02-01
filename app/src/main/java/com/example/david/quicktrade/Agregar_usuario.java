@@ -27,7 +27,7 @@ public class Agregar_usuario extends AppCompatActivity {
     EditText textNombre;
     EditText textApellidos;
     EditText textDireccion;
-    Button botonAnadir;
+    Button botonAnadirUsu;
     Button botonModificar;
     ListView lista;
 
@@ -36,14 +36,14 @@ public class Agregar_usuario extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_principal);
+        setContentView(R.layout.activity_agregar_usuario);
 
         textNombreUsuario = (EditText) findViewById(R.id.editNombreUsuario);
         textCorreo = (EditText) findViewById(R.id.editCorreo);
         textNombre = (EditText) findViewById(R.id.editNombre);
         textApellidos = (EditText) findViewById(R.id.editApellidos);
         textDireccion = (EditText) findViewById(R.id.editDireccion);
-        botonAnadir = (Button) findViewById(R.id.botonAnadir);
+        botonAnadirUsu = (Button) findViewById(R.id.botonAnadirUsu);
         botonModificar = (Button) findViewById(R.id.botonModificar);
         lista = (ListView) findViewById(R.id.ListView);
 
@@ -75,7 +75,7 @@ public class Agregar_usuario extends AppCompatActivity {
         });
 
 
-        botonAnadir.setOnClickListener(new View.OnClickListener() {
+        botonAnadirUsu.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
 
 

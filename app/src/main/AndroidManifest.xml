@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".Agregar_usuario" />
-        <activity android:name=".Agregar_producto"></activity>
+        <activity android:name=".Agregar_producto" />
+        <activity android:name=".Inicio_sesion" />
+        <activity android:name=".Perfil"></activity>
     </application>
 
 </manifest>

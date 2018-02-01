@@ -105,13 +105,13 @@
         android:inputType="textPersonName" />
 
     <Button
-        android:id="@+id/botonAnadir"
+        android:id="@+id/botonAnadirUsu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="38dp"
-        android:text="Añadir"
         android:layout_alignTop="@+id/ListView"
-        android:layout_toEndOf="@+id/textCorreo" />
+        android:layout_marginTop="38dp"
+        android:layout_toEndOf="@+id/textCorreo"
+        android:text="Añadir" />
 
     <ListView
         android:id="@+id/ListView"
@@ -125,8 +125,8 @@
         android:id="@+id/botonModificar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/botonAnadir"
-        android:layout_below="@+id/botonAnadir"
+        android:layout_alignStart="@+id/botonAnadirUsu"
+        android:layout_below="@+id/botonAnadirUsu"
         android:layout_marginTop="15dp"
         android:text="MODIFICAR" />
 
