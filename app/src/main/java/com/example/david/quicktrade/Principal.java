@@ -26,6 +26,8 @@ public class Principal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
 
+        mAuth = FirebaseAuth.getInstance();
+
         editCorreo = (EditText)findViewById(R.id.editCorreo);
         editContraseña = (EditText)findViewById(R.id.editContra);
 
@@ -48,16 +50,13 @@ public class Principal extends AppCompatActivity {
 
     private void registrar (String correo, String contraseña){
 
-        mAuth = FirebaseAuth.getInstance();
-
         mAuth.createUserWithEmailAndPassword(correo, contraseña)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
+                        FirebaseUser user = mAuth.getCurrentUser();
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
-
-                            FirebaseUser user = mAuth.getCurrentUser();
 
                             Toast.makeText(Principal.this, "Registro completado.",
                                     Toast.LENGTH_SHORT).show();
