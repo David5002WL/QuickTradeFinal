@@ -105,7 +105,6 @@ public class InformacionProducto extends AppCompatActivity {
 
             }
         });*/
-
         categoriaR.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
 
             @Override
