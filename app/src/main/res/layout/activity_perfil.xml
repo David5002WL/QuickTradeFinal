@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.david.quicktrade.Perfil">
+    tools:context="com.example.david.quicktrade.Perfil"
+    android:background="#3E85B0">
 
     <Button
         android:id="@+id/boton_agrUsu"
@@ -23,5 +24,14 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="34dp"
         android:text="AGREGAR PRODUCTO" />
+
+    <Button
+        android:id="@+id/botonTodosProductos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/boton_agrPro"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="118dp"
+        android:text="VER TODOS LOS PRODUCTOS" />
 
 </RelativeLayout>

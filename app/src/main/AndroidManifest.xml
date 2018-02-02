@@ -19,7 +19,9 @@
         <activity android:name=".Agregar_usuario" />
         <activity android:name=".Agregar_producto" />
         <activity android:name=".Inicio_sesion" />
-        <activity android:name=".Perfil"></activity>
+        <activity android:name=".Perfil" />
+        <activity android:name=".Todos_productos" />
+        <activity android:name=".InformacionProducto"></activity>
     </application>
 
 </manifest>

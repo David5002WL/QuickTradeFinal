@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class Perfil extends AppCompatActivity {
-    Button botonAgregarUsuario, botonAgregarProducto, botonIniciar;
+    Button botonAgregarUsuario, botonAgregarProducto, botonTodosProductos;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,6 +16,7 @@ public class Perfil extends AppCompatActivity {
 
         botonAgregarUsuario = (Button)findViewById(R.id.boton_agrUsu);
         botonAgregarProducto = (Button)findViewById(R.id.boton_agrPro);
+        botonTodosProductos = (Button)findViewById(R.id.botonTodosProductos);
 
 
         botonAgregarUsuario.setOnClickListener(new View.OnClickListener() {
@@ -28,6 +29,13 @@ public class Perfil extends AppCompatActivity {
         botonAgregarProducto.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent intent = new Intent(Perfil.this, Agregar_producto.class);
+                startActivity(intent);
+            }
+        });
+
+        botonTodosProductos.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent intent = new Intent(Perfil.this, Todos_productos.class);
                 startActivity(intent);
             }
         });

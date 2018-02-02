@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.david.quicktrade.Agregar_producto">
+    tools:context="com.example.david.quicktrade.Agregar_producto"
+    android:background="#3E85B0">
 
     <EditText
         android:id="@+id/editNomPro"
@@ -17,21 +18,13 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_below="@+id/radioGroup3"
-        android:layout_alignParentStart="true" />
-
     <Button
         android:id="@+id/botonAnadirPro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="AÑADIR"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/spinner"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/radioGroup3"
         android:layout_alignStart="@+id/radioGroup3" />
 
     <RadioGroup

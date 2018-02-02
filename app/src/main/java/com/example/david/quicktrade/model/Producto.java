@@ -5,14 +5,29 @@ package com.example.david.quicktrade.model;
  */
 
 public class Producto {
+    private int imagen_producto;
     private String nombreProducto;
     private String categoria;
-    private String usuario;
+    private String UID;
 
-    public Producto(String nombreProducto, String categoria, String usuario) {
+    public Producto(){
+
+    }
+
+    public Producto(int imagen_producto, String nombreProducto, String categoria, String UID) {
+        this.imagen_producto = imagen_producto;
         this.nombreProducto = nombreProducto;
         this.categoria = categoria;
-        this.usuario = usuario;
+        this.UID = UID;
+    }
+
+
+    public int getImagen_producto() {
+        return imagen_producto;
+    }
+
+    public void setImagen_producto(int imagen_producto) {
+        this.imagen_producto = imagen_producto;
     }
 
     public String getNombreProducto() {
@@ -31,20 +46,24 @@ public class Producto {
         this.categoria = categoria;
     }
 
-    public String getUsuario() {
-        return usuario;
+
+    public String getUID() {
+        return UID;
     }
 
-    public void setUsuario(String usuario) {
-        this.usuario = usuario;
+    public void setUID(String UID) {
+        this.UID = UID;
     }
 
+    @Override
     public String toString() {
         return "Producto{" +
                 "nombreProducto='" + nombreProducto + '\'' +
                 ", categoria='" + categoria + '\'' +
-                ", usuario='" + usuario + '\'' +
+                ", UID='" + UID + '\'' +
+                ", imagen_producto='" + imagen_producto + '\'' +
                 '}';
     }
+
 
 }

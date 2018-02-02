@@ -9,4 +9,10 @@
     <string name="campo_nombre">nombre</string>
     <string name="campo_apellidos">apellidos</string>
     <string name="campo_direccion">direccion</string>
+
+
+    <string name="campo_nombrep">nombreProducto</string>
+    <string name="campo_categoria">categoria</string>
+    <string name="campo_UID">uid</string>
+
 </resources>
