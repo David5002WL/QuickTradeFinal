@@ -22,7 +22,7 @@ public class InformacionProducto extends AppCompatActivity {
     private String uid, opcion, cambioNombre, cambioCategoria, nombreForma, categoriaForma;
     private FirebaseAuth mAuth;
     private FirebaseUser firebaseUser;
-    DatabaseReference bbdd;
+    DatabaseReference bbdd, bbdd2;
     private EditText nombre1, categoria1;
     private ToggleButton modificar;
     private Button borrar;
@@ -41,6 +41,9 @@ public class InformacionProducto extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         firebaseUser = mAuth.getCurrentUser();
         bbdd = (FirebaseDatabase.getInstance().getReference("producto").child(uid));
+
+        //String clave = bbdd.getKey();
+        //bbdd2 = (FirebaseDatabase.getInstance().getReference("producto").child(clave));
 
         nombre1 = (EditText) findViewById(R.id.nombre);
         categoria1 = (EditText) findViewById(R.id.categoria);
@@ -94,7 +97,7 @@ public class InformacionProducto extends AppCompatActivity {
             }
         });
 
-       /* bbdd.addValueEventListener(new ValueEventListener() {
+        /*bbdd.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 bindInfoProducto(dataSnapshot);
@@ -162,7 +165,7 @@ public class InformacionProducto extends AppCompatActivity {
 
     }
 
-/*  //Aquí se rellena la información del usuario
+    /*//Aquí se rellena la información del usuario
     private void bindInfoProducto(DataSnapshot dataSnapshot) {
         Producto p = dataSnapshot.getValue(Producto.class);
         nombre1.setText(p.getNombreProducto());
